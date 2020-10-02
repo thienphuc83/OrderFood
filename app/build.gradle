@@ -21,6 +21,9 @@ android {
         }
     }
 }
+apply plugin: 'com.android.application'
+// Add this line
+apply plugin: 'com.google.gms.google-services'
 
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
@@ -30,4 +33,30 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
+    //firebase
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation 'com.google.firebase:firebase-core:16.0.4'
+    implementation 'com.google.firebase:firebase-auth:16.0.5'
+    implementation 'com.google.firebase:firebase-database:16.0.4'
+    implementation 'com.google.firebase:firebase-storage:16.0.4'
+
+    //lib widget
+    implementation 'com.google.android.material:material:1.2.0'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    dependencies {
+        implementation 'me.relex:circleindicator:2.1.4'
+    }
+    dependencies {
+        compile 'com.eftimoff:android-viewpager-transformers:1.0.1@aar'
+    }
+    //noinspection GradleCompatible
+    implementation 'com.android.support:cardview-v7:28.0.0'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    compile 'info.hoang8f:fbutton:1.0.5'
+    compile 'com.rengwuxian.materialedittext:library:2.1.4'
+    compile 'com.chootdev:blurimg:1.0.1'
 }
