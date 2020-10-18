@@ -57,8 +57,9 @@ public class MainActivity extends AppCompatActivity {
 
     int REQUEST_CODE_FOLDER = 1;
     int REQUEST_CODE_CAMERA = 2;
-    private StorageReference mStorageRef;
+
     // upload ảnh
+    private StorageReference mStorageRef;
     User user;
 
 
@@ -67,9 +68,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //upload ảnh phải có
         mStorageRef = FirebaseStorage.getInstance().getReference();
-
-
         AnhXa();
 
         firebaseAuth = FirebaseAuth.getInstance();

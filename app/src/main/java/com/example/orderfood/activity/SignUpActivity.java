@@ -61,7 +61,7 @@ public class SignUpActivity extends AppCompatActivity {
                 if (select_gender == null){
                     Toast.makeText(SignUpActivity.this, "Chọn giới tính đi bạn!", Toast.LENGTH_SHORT).show();
                 }else {
-                    final String gender= select_gender.getText().toString();
+                    final String gender = select_gender.getText().toString();
                     if (TextUtils.isEmpty(name)||TextUtils.isEmpty(pass)|| TextUtils.isEmpty(email)||TextUtils.isEmpty(phone)){
                         Toast.makeText(SignUpActivity.this, "Điền đầy đủ thông tin!", Toast.LENGTH_SHORT).show();
                     }else{
